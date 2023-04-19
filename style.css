@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/hot.png) no-repeat center/cover;
+}
+
+.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/hot.png) no-repeat center/cover;
+}
+
+.hot #weather {
+    background: url(./img/hot.png) no-repeat center/cover;
+}
+
+.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/cold.png) no-repeat center/cover;
+}
+
+.cold #weather {
+    background: url(./img/cold.png) no-repeat center/cover;
+}
+
+#weather {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 600px;
+    background: url(./img/hot.png) no-repeat center/cover;
+}
+
+#weather .input-search {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 0 15px 0 15px;
+    font-size: 19px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#weather .input-search:focus {
+    border-radius: 15px 0 15px 0;
+    transition: .4s;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#weather .content {
+    color: #fff;
+    transition: .2s;
+}
+
+#weather .content .name {
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#weather .content .date-time {
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+#weather .content .temperature {
+    margin: 20px 0 30px;
+    padding: 20px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.6);
+    font-size: 65px;
+    font-weight: 800;
+}
+
+#weather .content .desc {
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#weather .content .more-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#weather .content .more-desc div {
+    display: flex;
+    flex-direction: column;
+}
+
+#weather .content .more-desc div span {
+    margin-top: 15px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 1;
+}
